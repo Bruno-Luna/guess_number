@@ -1,9 +1,6 @@
 /* ***** GLOBAL ********************************************************************************************* */
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500&display=swap');
 
-:root{
-    
-}
 
 *{
     margin: 0;
@@ -19,10 +16,10 @@ body{
 /* Header ******* */
 
 header{
-    width: 95%;
+    width: 100%; 
     text-align: center;
     background-color: #000814;
-    padding: 1.8rem;
+    
 }
 
 header a h1{
@@ -39,7 +36,7 @@ header a h1{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background: linear-gradient(100deg, #e5e5e5, #14213d, #e5e5e5 );
+    background: linear-gradient(to right, #14213d, #fca311, #14213d );
     
 }
 
@@ -58,7 +55,6 @@ header a h1{
 .container form label{
     color: #ffffff;
     font-size: 1.3rem;
-    font-weight: 600;
 }
 
 .container form input{
@@ -91,17 +87,17 @@ header a h1{
 }
 
 .container form button:hover{
-    color: #000000;
-    background-color:#ffc300 ;
+    color: #fca311;
 }
 
 /* Section ********** */
 .container .result-box{
-    margin: 2% 0;
+    margin-top: .9rem;
+    margin-bottom: 0.5rem;
     background-color: #000000;
     padding: 1rem 2.4rem;
     border-radius: 0.5rem;
-    color: #e5e5e5;
+    color: #ffc300;
 }
 
 .container .result-box h2{
@@ -122,9 +118,10 @@ header a h1{
     cursor: pointer;
     border: 0;
     outline: 0;
-    background-color: whitesmoke;
-    color: blue;
-    margin-top: 3%;
+    background-color: #000000;
+    color: #e5e5e5 ;
+    margin-top: .7rem;
+    margin-bottom: .9rem;
     padding: 1rem;
     font-size: 1.3rem;
     border-radius: 0.3rem;
@@ -134,16 +131,15 @@ header a h1{
 }
 
 .container #btnRestart:hover{
-    background-color: blue;
-    color: whitesmoke;
+    color: #fca311;
 }
 
 /* Footer ******* */
 
 footer{
-    padding: .4rem;
+    padding: .7rem;
     text-align: center;
-    background-color: #000814;
-    color: #ffc300;
     font-size: 1rem;
+    background-color: #000814;
+    color:  #e5e5e5;
 }

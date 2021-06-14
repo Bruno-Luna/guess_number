@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
-    <title>Guess_Number</title>
+    <script src="assets/js/script.js" defer></script>
+
+    <title>Guess Number</title>
 </head>
+
 <body>
-    
+
     <header>
-        <a href="index.html"><h1>Guess Number</h1></a>
+        <a href="index.html">
+            <h1>Guess Number</h1>
+        </a>
     </header>
 
     <main class="container">
-        <form>
+        <form id="form">
             <label for="kick">Digite um número: (0 a 10)</label>
             <input type="number" id="kick" max="10" placeholder="0">
 
@@ -24,13 +29,14 @@
 
         <section class="result-box" id="result">
             <h2 id="status">Qual o número sorteado?</h2>
-            <span id="attempt">Tentativas: 0</span>
+            <span id="attempt">Tentativa: 0</span>
         </section>
 
-            <button id="btnRestart">Jogar de novo!</button>
+        <button id="btnRestart" onclick="restart()">Jogar de novo!</button>
     </main>
     <footer>
         <p>GuessNumber, 2021 &copy;</p>
     </footer>
 </body>
+
 </html>
