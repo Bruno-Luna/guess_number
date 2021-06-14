@@ -9,9 +9,14 @@
     text-decoration: none;
 }
 
-body{
-    width: 100%;
-    min-height: 100%;
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex-grow: 1;
 }
 
 /* Header ******* */
@@ -25,7 +30,7 @@ header{
 
 header a h1{
     color: #ffc300;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 300;
 }
 
@@ -35,6 +40,7 @@ header a h1{
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     justify-content: flex-start;
     background: linear-gradient(to right, #14213d, #fca311, #14213d );
@@ -45,11 +51,11 @@ header a h1{
 
 .container form{
     background: #14213d;
-    margin-top: 2%;
+    margin-top: 4%;
     padding: 2rem 3rem;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     border-radius: 0.5rem;
 }
 
@@ -92,11 +98,11 @@ header a h1{
 }
 
 /* Section ********** */
-.container .result-box{
-    margin-top: .9rem;
-    margin-bottom: 0.5rem;
+.container .result-box {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     background-color: #000000;
-    padding: 1rem 3.2rem;
+    padding: 2rem 3rem;
     border-radius: 0.5rem;
     color: #ffc300;
 }
@@ -127,7 +133,6 @@ header a h1{
     font-size: 1.3rem;
     border-radius: 0.3rem;
     transition: 0.2s ease-in-out;
-
     display: none;
 }
 
@@ -138,8 +143,9 @@ header a h1{
 /* Footer ******* */
 
 footer{
-    padding: .4rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: .9rem;
     background-color: #000814;
     color:  #e5e5e5;
@@ -147,15 +153,34 @@ footer{
 
 /*  Responsividade */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
+
     header a h1{
-        font-size: 2.3rem;
+       font-size: 2rem;
     }
-    
+
     .container form {
-        padding: 1rem 1.5rem;
+        padding: 1.4rem 1.3rem;
     }
+
+    .container form label {
+        font-size: 1.1rem;
+    }
+
+    .container form button {
+        font-size: 1.1rem;
+    }
+    .container .result-box h2 {
+        font-size: 1.1rem;
+    }
+
     .container .result-box {
-        padding: .4rem .9rem;
+        padding: 1.4rem 2rem; 
+    }
+    .container .result-box span {
+        font-size: .9rem;
 }
+    footer{
+        font-size: .7rem;
+    }
 }
