@@ -1,10 +1,8 @@
-# :construction:  ​**E​m​ ​C​on​s​t​r​u​ç​ã​o​** :construction:
-
 
 
 # **Guess_Number**
 
-
+A página desenvolvida é um jogo, no qual a pessoa tem que digitar o número que o computador está "pensando". O número a ser digitado pode ser entre 0 a 10. Este projeto pude além de ter contato com input's, pude ampliar meus conhecimentos com a linguagem Javascript.
 
 ![APM](https://camo.githubusercontent.com/2b5be4f21ba05bac285e81a1a1f11036ee50ca3bb9b2b7b00a3cd1cf0589b2fc/68747470733a2f2f696d672e736869656c64732e696f2f61706d2f6c2f76696d2d6d6f64653f636f6c6f723d626c7565)
 
@@ -24,12 +22,34 @@ https://bruno-luna.github.io/guess_number/
 
 ## Estrutura do diretório:
 
+guess-number/
+
+- index.html
+- readme.md
+ - assets/
+   - css/
+     - style.css
+   - js/
+     - script.js
+   - screenshot/
+     - sc-I.jpg
+     - sc-II.jpg
+
 ## Especificações:
 
-- Fonte utilizada:  
+- Fontes utilizadas: `Mukta, sans-serif;`  
 
-- Cores utilizadas:
+- Cores utilizadas: 
 
+  - Preto: `#000814, #14213d rgba(0, 0, 0, 0.1), #000000`
+
+  - Amarelo: `#ffc300, #fca311`
+
+  - Branco: `#ffffff, #e5e5e5`
+
+    
+
+## Screenshot: 
 
 ![](https://github.com/Bruno-Luna/guess_number/blob/master/assets/screenshot/sc-I.png)
 
